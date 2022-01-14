@@ -24,3 +24,10 @@ if (word === reverseWord(word)) {
 } else {
 	console.log('La parola non è palindroma.')
 }
+
+//# Bonus
+// radar
+
+// 1 == 5
+// 2 == 4
+// 3 == 3
