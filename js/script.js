@@ -1,0 +1,25 @@
+//# Esercizio 1: Palindroma
+// Chiedere all’utente di inserire una parola.
+// Creare una funzione per capire se la parola inserita è palindroma
+
+//* Chiedo la parola
+const word = prompt('Inserisci una parola', 'Pippo').trim().toLocaleLowerCase();
+console.log('La parola è: ' + word);
+
+
+//* Controllo se è palindroma
+
+let reversedWord = '';
+
+// Recupero la parola al contrario
+for (let i = word.length - 1; i >= 0; i--) {
+	reversedWord += word[i];
+}
+
+console.log('La parola al contrario è: ' + reversedWord);
+
+if (word === reversedWord) {
+	console.log('La parola è palindroma!');
+} else {
+	console.log('La parola non è palindroma.')
+}
